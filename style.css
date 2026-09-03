@@ -1,29 +1,29 @@
 /* ==========================================================================
-   MENTORIX INSTITUTE - Exact Color Matched Brand Maintenance Page
+   MENTORIX INSTITUTE - Harmonized Luxury Maintenance Page
    ========================================================================== */
 
 :root {
-  /* Brand Color Tokens */
+  /* Exact Brand Palette Tokens */
   --navy-primary: #183354;
   --navy-dark: #0e1e32;
   --navy-light: #244874;
   
-  --blue-vibrant: #2488e5;
+  --blue-vibrant: #258be6;
   --blue-vibrant-dark: #1972c6;
-  --blue-sky: #8fbeee;
+  --blue-sky: #90bce7;
   --blue-sky-light: #bde0fe;
   
-  /* Exact extracted backdrop from physical logo photo */
-  --warm-sand-base: #eddbd1;
-  --warm-sand-light: #f7ece5;
+  /* Exact Matched Warm Sand & Cream Background */
+  --warm-sand-base: #ede1d7;
+  --warm-sand-light: #fdf7f2;
   --warm-sand-dark: #dfcbbf;
   
   --text-primary: #183354;
   --text-muted: #56687f;
   --text-light: #8395aa;
   
-  --card-bg: rgba(255, 255, 255, 0.65);
-  --card-border: rgba(255, 255, 255, 0.85);
+  --card-bg: rgba(255, 255, 255, 0.68);
+  --card-border: rgba(255, 255, 255, 0.9);
   --card-shadow: rgba(24, 51, 84, 0.08);
 
   /* Typography */
@@ -41,7 +41,7 @@ html, body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--warm-sand-base);
-  background: radial-gradient(circle at 50% 25%, #fbf4ef 0%, #eddbd1 50%, #e0cdc1 100%);
+  background: radial-gradient(circle at 50% 25%, #fdf8f4 0%, #ede1d7 50%, #e0cebf 100%);
   color: var(--text-primary);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -69,8 +69,8 @@ html, body {
   height: 100%;
   z-index: 0;
   background-image: 
-    linear-gradient(to right, rgba(24, 51, 84, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(24, 51, 84, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(24, 51, 84, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 51, 84, 0.035) 1px, transparent 1px);
   background-size: 45px 45px;
   pointer-events: none;
 }
@@ -82,14 +82,14 @@ html, body {
   filter: blur(110px);
   z-index: 1;
   pointer-events: none;
-  opacity: 0.45;
+  opacity: 0.5;
   animation: floatAmbient 16s ease-in-out infinite alternate;
 }
 
 .glow-1 {
   width: 550px;
   height: 550px;
-  background: radial-gradient(circle, rgba(143, 190, 238, 0.6) 0%, rgba(143, 190, 238, 0) 70%);
+  background: radial-gradient(circle, rgba(144, 188, 231, 0.65) 0%, rgba(144, 188, 231, 0) 70%);
   top: -120px;
   left: -80px;
 }
@@ -97,7 +97,7 @@ html, body {
 .glow-2 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(36, 136, 229, 0.3) 0%, rgba(36, 136, 229, 0) 70%);
+  background: radial-gradient(circle, rgba(37, 139, 230, 0.35) 0%, rgba(37, 139, 230, 0) 70%);
   bottom: -100px;
   right: -60px;
   animation-delay: -6s;
@@ -106,7 +106,7 @@ html, body {
 .glow-3 {
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 70%);
   top: 35%;
   right: 20%;
   animation-delay: -10s;
@@ -132,7 +132,7 @@ html, body {
   margin: 0 auto;
 }
 
-/* Top Bar */
+/* Top Navigation Bar */
 .top-nav {
   width: 100%;
   display: flex;
@@ -145,7 +145,7 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   padding: 0.45rem 1.15rem;
   border-radius: 9999px;
   border: 1px solid rgba(24, 51, 84, 0.12);
@@ -191,7 +191,7 @@ html, body {
   font-size: 0.825rem;
   font-weight: 600;
   color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
   padding: 0.4rem 0.95rem;
   border-radius: 8px;
   border: 1px solid rgba(24, 51, 84, 0.08);
@@ -217,7 +217,7 @@ html, body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Seamless Brand Logo Showcase */
+/* Brand Logo Display */
 .brand-showcase {
   display: flex;
   align-items: center;
@@ -225,27 +225,26 @@ html, body {
   margin-bottom: 2rem;
 }
 
-.seamless-logo-wrapper {
+.logo-display-wrapper {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  max-width: 520px;
+  width: 100%;
   padding: 0.5rem;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   animation: floatLogo 4.5s ease-in-out infinite;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.seamless-logo-wrapper:hover {
+.logo-display-wrapper:hover {
   transform: translateY(-4px) scale(1.02);
 }
 
-.original-logo-img {
-  max-width: 480px;
+.brand-logo-img {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 12px 24px rgba(24, 51, 84, 0.18));
 }
 
 @keyframes floatLogo {
@@ -283,7 +282,7 @@ html, body {
 .progress-module {
   max-width: 520px;
   margin: 0 auto 2.75rem auto;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.82);
   padding: 1.25rem 1.5rem;
   border-radius: 20px;
   border: 1px solid rgba(24, 51, 84, 0.08);
@@ -341,7 +340,7 @@ html, body {
   background: linear-gradient(90deg, var(--blue-sky), var(--blue-vibrant));
   border-radius: 9999px;
   position: relative;
-  box-shadow: 0 0 14px rgba(36, 136, 229, 0.4);
+  box-shadow: 0 0 14px rgba(37, 139, 230, 0.4);
   transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -462,12 +461,12 @@ html, body {
 }
 
 .matrix-item.ready .matrix-bullet {
-  background: rgba(36, 136, 229, 0.15);
+  background: rgba(37, 139, 230, 0.15);
   color: var(--blue-vibrant);
 }
 
 .matrix-item.working .matrix-bullet {
-  background: rgba(143, 190, 238, 0.35);
+  background: rgba(144, 188, 231, 0.35);
   color: var(--navy-primary);
 }
 
@@ -539,7 +538,7 @@ html, body {
     border-radius: 26px;
   }
 
-  .original-logo-img {
+  .logo-display-wrapper {
     max-width: 100%;
   }
 
