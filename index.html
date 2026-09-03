@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mentorix Institute — Under Maintenance & Upgrading</title>
-  <meta name="description" content="Mentorix Institute is currently undergoing scheduled maintenance and system upgrades. We will be back online shortly." />
+  <title>Mentorix Institute — System Upgrade & Maintenance</title>
+  <meta name="description" content="Mentorix Institute official website is currently undergoing maintenance and system upgrades." />
 
-  <!-- Favicon SVG using exact logo colors -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%23183354'/><path d='M25 55 L40 30 C45 22 55 22 60 30 L45 55 Z' fill='%238fbeee'/><path d='M50 55 L65 30 C70 22 80 22 85 30 L70 70 C68 76 60 76 58 70 Z' fill='%232488e5'/></svg>" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo-transparent.png" />
 
-  <!-- Google Fonts: Syne & Plus Jakarta Sans for high-end institutional authority -->
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Interactive Ambient Background Canvas -->
+  <!-- Dynamic Ambient Particle Canvas -->
   <canvas id="ambient-canvas"></canvas>
 
-  <!-- Ambient Color Glows (Warm Sand, Azure, Ice Blue, Deep Navy) -->
+  <!-- Ambient Light Orbs matching brand colors -->
   <div class="ambient-glow glow-1"></div>
   <div class="ambient-glow glow-2"></div>
   <div class="ambient-glow glow-3"></div>
 
-  <!-- Background Decorative Grid Lines -->
+  <!-- Decorative Architectural Grid -->
   <div class="grid-overlay"></div>
 
-  <!-- Main Content Wrapper -->
+  <!-- Main Container -->
   <main class="main-wrapper">
     
-    <!-- Top Bar / Institutional Status -->
+    <!-- Top Bar -->
     <header class="top-nav">
       <div class="live-status-pill">
         <span class="pulse-ring"></span>
@@ -39,61 +39,34 @@
         <span class="status-text">System Upgrade in Progress</span>
       </div>
       <div class="est-badge">
-        <span>Scheduled Deployment</span>
+        <span>Digital Campus Upgrade</span>
       </div>
     </header>
 
-    <!-- Center Hero Card -->
+    <!-- Center Card -->
     <section class="maintenance-card">
       
-      <!-- Brand Logo Presentation -->
+      <!-- Original Brand Logo Showcase -->
       <div class="brand-showcase">
-        <div class="logo-symbol-wrapper">
-          <!-- Exact Mentorix Double-Arch 3D 'M' SVG -->
-          <svg class="mentorix-logo-svg" viewBox="0 0 160 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="lightBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#b6d9f8" />
-                <stop offset="100%" stop-color="#80b4e8" />
-              </linearGradient>
-              <linearGradient id="deepBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#3ca2f5" />
-                <stop offset="100%" stop-color="#1b77d2" />
-              </linearGradient>
-              <filter id="dropShadow3D" x="-10%" y="-10%" width="130%" height="130%">
-                <feDropShadow dx="3" dy="7" stdDeviation="6" flood-color="#183354" flood-opacity="0.25" />
-              </filter>
-            </defs>
-            
-            <!-- Left Folded Ribbon (Light Sky Blue) -->
-            <path d="M 28 65 C 20 54 28 36 44 26 C 58 17 74 24 82 36 L 56 78 C 50 87 36 86 30 76 Z" 
-                  fill="url(#lightBlueGrad)" filter="url(#dropShadow3D)" class="logo-ribbon left-ribbon" />
-            <path d="M 32 60 L 52 94 C 56 102 68 102 72 94 L 74 88 C 76 83 72 78 66 78 L 54 78 Z" 
-                  fill="#78a9dc" class="logo-ribbon left-shadow" />
-
-            <!-- Right Folded Ribbon (Vibrant Azure Blue) -->
-            <path d="M 68 46 C 60 35 68 18 84 10 C 98 2 115 8 124 22 L 148 64 C 156 78 146 96 130 96 C 118 96 112 86 108 78 L 94 52 Z" 
-                  fill="url(#deepBlueGrad)" filter="url(#dropShadow3D)" class="logo-ribbon right-ribbon" />
-            <path d="M 112 76 L 112 102 C 112 110 102 116 94 110 C 88 106 88 98 88 92 L 88 74 Z" 
-                  fill="#1564b3" class="logo-ribbon right-shadow" />
-          </svg>
-        </div>
-
-        <!-- Wordmark with 3D Depth Typography -->
-        <div class="brand-title-group">
-          <h1 class="brand-name">MENTORIX</h1>
-          <h2 class="brand-sub">INSTITUTE</h2>
+        <div class="original-logo-container">
+          <img 
+            src="logo.png" 
+            alt="Mentorix Institute Original Logo" 
+            class="original-logo-img"
+            id="brand-logo"
+          />
+          <div class="logo-reflection-glow"></div>
         </div>
       </div>
 
-      <!-- Animated Status Title -->
+      <!-- Maintenance Headline & Message -->
       <div class="announcement">
-        <h3 class="headline">
-          Elevating Our Learning <br />
-          <span class="accent-highlight">Ecosystem &amp; Infrastructure</span>
-        </h3>
+        <h1 class="headline">
+          Building an Elevated <br />
+          <span class="accent-highlight">Learning Experience</span>
+        </h1>
         <p class="description">
-          We are enhancing our digital campus, optimizing institutional portals, and integrating next-generation academic tools for our students and faculty.
+          Mentorix Institute is currently undergoing scheduled platform upgrades to introduce enhanced learning tools, student dashboards, and academic resources.
         </p>
       </div>
 
@@ -102,18 +75,18 @@
         <div class="progress-header">
           <div class="progress-status-node">
             <span class="gear-icon">⚙</span>
-            <span class="node-title">Optimization Status: <strong id="status-phase">Finalizing Database Sync</strong></span>
+            <span class="node-title">Status: <strong id="status-phase">Finalizing Platform Migration</strong></span>
           </div>
-          <span class="percent-counter" id="progress-val">92%</span>
+          <span class="percent-counter" id="progress-val">94%</span>
         </div>
         <div class="track-bar">
-          <div class="fill-bar" style="width: 92%">
+          <div class="fill-bar" style="width: 94%">
             <div class="shimmer-wave"></div>
           </div>
         </div>
       </div>
 
-      <!-- Countdown Timer Component -->
+      <!-- Live Countdown Timer -->
       <div class="timer-section">
         <span class="timer-caption">Expected Live Re-launch In</span>
         <div class="timer-grid">
@@ -139,26 +112,26 @@
         </div>
       </div>
 
-      <!-- Animated Academic Systems Checkpoints -->
+      <!-- System Readiness Matrix -->
       <div class="systems-matrix">
         <div class="matrix-item ready">
           <div class="matrix-bullet">✓</div>
           <div class="matrix-text">
-            <strong>Core Portal</strong>
-            <span>Completed</span>
+            <strong>Portal Engine</strong>
+            <span>Verified</span>
           </div>
         </div>
         <div class="matrix-item working">
           <div class="matrix-bullet spin">◌</div>
           <div class="matrix-text">
-            <strong>Learning Hub</strong>
-            <span>Upgrading</span>
+            <strong>Academic Hub</strong>
+            <span>Deploying</span>
           </div>
         </div>
         <div class="matrix-item queued">
           <div class="matrix-bullet">●</div>
           <div class="matrix-text">
-            <strong>Student Analytics</strong>
+            <strong>Resource Center</strong>
             <span>Calibrating</span>
           </div>
         </div>
@@ -170,7 +143,7 @@
     <footer class="institutional-footer">
       <div class="footer-info">
         <p class="copyright">&copy; <span id="current-year">2026</span> <strong>Mentorix Institute</strong>. All Rights Reserved.</p>
-        <p class="direct-inquiry">Direct Academic Inquiries: <a href="mailto:info@mentorix.com" class="academic-link">info@mentorix.com</a></p>
+        <p class="direct-inquiry">For urgent administrative assistance: <a href="mailto:info@mentorix.com" class="academic-link">info@mentorix.com</a></p>
       </div>
     </footer>
 
