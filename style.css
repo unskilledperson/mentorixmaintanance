@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MENTORIX INSTITUTE - Original Photo Logo Matched Maintenance Page
+   MENTORIX INSTITUTE - Ultra-Sharp High-Definition Maintenance Page
    ========================================================================== */
 
 :root {
@@ -13,7 +13,7 @@
   --blue-sky: #90bce7;
   --blue-sky-light: #bde0fe;
   
-  /* Harmonized Warm Background Gradient */
+  /* Harmonized Warm Sand & Cream Background */
   --warm-sand-base: #ede1d7;
   --warm-sand-light: #fbf5ef;
   --warm-sand-dark: #dfcbbf;
@@ -243,9 +243,12 @@ html, body {
 
 .brand-logo-img {
   width: 100%;
+  max-width: 500px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 8px 20px rgba(24, 51, 84, 0.16));
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 10px 22px rgba(24, 51, 84, 0.18));
 }
 
 @keyframes floatLogo {
