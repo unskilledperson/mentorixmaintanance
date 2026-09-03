@@ -1,9 +1,9 @@
 /* ==========================================================================
-   MENTORIX INSTITUTE - Harmonized Luxury Maintenance Page
+   MENTORIX INSTITUTE - Original Photo Logo Matched Maintenance Page
    ========================================================================== */
 
 :root {
-  /* Exact Brand Palette Tokens */
+  /* Exact Extracted Brand Palette */
   --navy-primary: #183354;
   --navy-dark: #0e1e32;
   --navy-light: #244874;
@@ -13,16 +13,16 @@
   --blue-sky: #90bce7;
   --blue-sky-light: #bde0fe;
   
-  /* Exact Matched Warm Sand & Cream Background */
+  /* Harmonized Warm Background Gradient */
   --warm-sand-base: #ede1d7;
-  --warm-sand-light: #fdf7f2;
+  --warm-sand-light: #fbf5ef;
   --warm-sand-dark: #dfcbbf;
   
   --text-primary: #183354;
   --text-muted: #56687f;
   --text-light: #8395aa;
   
-  --card-bg: rgba(255, 255, 255, 0.68);
+  --card-bg: rgba(255, 255, 255, 0.72);
   --card-border: rgba(255, 255, 255, 0.9);
   --card-shadow: rgba(24, 51, 84, 0.08);
 
@@ -217,7 +217,7 @@ html, body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Brand Logo Display */
+/* Original Photo Logo Display */
 .brand-showcase {
   display: flex;
   align-items: center;
@@ -245,6 +245,7 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
+  filter: drop-shadow(0 8px 20px rgba(24, 51, 84, 0.16));
 }
 
 @keyframes floatLogo {
